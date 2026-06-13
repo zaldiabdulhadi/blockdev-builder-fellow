@@ -38,5 +38,21 @@
         "file": "sesi2/ReturnValues.sol"
       }
     }
+  },
+  "sesi2/Event.sol": {
+    "__sources__": {
+      "sesi2/Event.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.24;\r\n\r\nerror ReturnValues_NotOwner(address caller);\r\n\r\ncontract Event {\r\n    address public immutable owner;\r\n\r\n    constructor() {\r\n        owner = msg.sender;\r\n    }\r\n\r\n    mapping(address => uint256) public balances;\r\n    event Deposit(address indexed user, uint256 amount);\r\n\r\n    function deposit() external payable {\r\n        balances[msg.sender] += msg.value;\r\n        emit Deposit(msg.sender, msg.value);\r\n    }\r\n\r\n    modifier onlyOwner() {\r\n        require(msg.sender == owner, ReturnValues_NotOwner(msg.sender));\r\n        _;\r\n    }\r\n\r\n    function withdraw() external payable onlyOwner {\r\n        // Transfer Logic Code\r\n        balances[msg.sender] += msg.value;\r\n    } \r\n}",
+        "file": "sesi2/Event.sol"
+      }
+    }
+  },
+  "sesi2/SimpleBank.sol": {
+    "__sources__": {
+      "sesi2/SimpleBank.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.24;\r\n\r\nerror SimpleBank_FundKurang();\r\nerror SimpleBank_GagalWithdraw();\r\n\r\ncontract SimpleBank {\r\n    bool public paused;\r\n    address owner;\r\n\r\n    constructor() {\r\n        owner = msg.sender;\r\n    }\r\n    \r\n    modifier onlyOwner() { require(msg.sender == owner,\"Not owner\"); _; }\r\n    mapping(address => uint256) public balances;\r\n\r\n    // modifier CheckBalances(uint256 amount) {\r\n    //     require(balances[msg.sender] < amount);\r\n    //     _\r\n    // }\r\n\r\n    modifier Checkbalances(uint256 amount) {\r\n        require(balances[msg.sender] >= amount, SimpleBank_FundKurang());\r\n        _;\r\n    }\r\n\r\n    function deposit() external payable {\r\n        balances[msg.sender] += msg.value;\r\n    }\r\n\r\n    function withdraw(uint256 amount) external payable Checkbalances(amount) {\r\n\r\n        (bool success, ) = msg.sender.call{value:amount}(\"\");      \r\n\r\n        if(!success) {\r\n            revert SimpleBank_GagalWithdraw();\r\n        }  \r\n\r\n        balances[msg.sender] -= amount;\r\n    }\r\n\r\n    function setPaused(bool _p) external onlyOwner { paused = _p; }\r\n}",
+        "file": "sesi2/SimpleBank.sol"
+      }
+    }
   }
 }

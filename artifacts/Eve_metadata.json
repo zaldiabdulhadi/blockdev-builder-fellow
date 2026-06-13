@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"sesi2/Event.sol": "Name"
+			"sesi2/Event.sol": "Eve"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -33,11 +33,11 @@
 	},
 	"sources": {
 		"sesi2/Event.sol": {
-			"keccak256": "0x12e37172b9a56429850825a82e2c98dec53a4e3ac38f26d0b420e01dab37e385",
+			"keccak256": "0xdd29b16a3ac886a5de3a28a2e224d94cf52595cf6c9bf27517b2ee68e5b1f6ce",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6c47609c481f4d891b7f3024dbda7c488934912d3ea255dcae2dacd221494f4b",
-				"dweb:/ipfs/QmfKwHM7EPLx8BB22BtMZ8ap1wmcrxRiH8piQFos3s1nPD"
+				"bzz-raw://de236ff8e37906229f4cd22c62438360438e65c8e28530adecd80f51b7890fe2",
+				"dweb:/ipfs/QmcLixb4hRPA7PHTXpv3h2mQvVuSPxj1UbMtcHQZxo2psE"
 			]
 		}
 	},

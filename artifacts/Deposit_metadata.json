@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"sesi2/Event.sol": "Name"
+			"sesi2/SimpleBank.sol": "Deposit"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -32,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"sesi2/Event.sol": {
-			"keccak256": "0x12e37172b9a56429850825a82e2c98dec53a4e3ac38f26d0b420e01dab37e385",
+		"sesi2/SimpleBank.sol": {
+			"keccak256": "0x44d1f5af91f81eb47f47bcb32c954fa3855c095379fe2bff3853b6f132092913",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6c47609c481f4d891b7f3024dbda7c488934912d3ea255dcae2dacd221494f4b",
-				"dweb:/ipfs/QmfKwHM7EPLx8BB22BtMZ8ap1wmcrxRiH8piQFos3s1nPD"
+				"bzz-raw://388a23df3555bb0f90af3174ae54e499a037a97d29431d1a485de13c1ae303a9",
+				"dweb:/ipfs/QmQCmMYSNrxLD4DAF4qqPnGzhKVt1kNyrFFQcVa4iGRruT"
 			]
 		}
 	},
