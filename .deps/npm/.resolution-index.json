@@ -1,0 +1,42 @@
+{
+  "sesi2/InitialSetup.sol": {
+    "__sources__": {
+      "sesi2/InitialSetup.sol": {
+        "content": "// SPDX-License-Identifier: MIT      \r\npragma solidity ^0.8.20;            \r\n\r\ncontract HelloWorld {\r\n    string public greeting;\r\n\r\n    constructor(string memory _g) {\r\n        greeting = _g;\r\n    }\r\n\r\n    function setGreeting(string calldata _g) external {\r\n        greeting = _g;               // ubah state -> bayar gas\r\n    }\r\n}",
+        "file": "sesi2/InitialSetup.sol"
+      }
+    }
+  },
+  "sesi2/TipeVariabel.sol": {
+    "__sources__": {
+      "sesi2/TipeVariabel.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.24;\r\n\r\ncontract TipeVariabel {\r\n    // Integer\r\n    int32 integer;\r\n    uint UnsignedInteger;\r\n\r\n    // String\r\n    string String;\r\n\r\n    // Address\r\n    address Adress;\r\n\r\n    // Boolean\r\n    bool Boolean;\r\n\r\n    // Bytes\r\n    bytes Bytes;\r\n\r\n    uint256 a = 0.5 ether; // 0.5 * 10^17 wei\r\n    uint256 b = 1 gwei;\r\n    uint256 c = 1 wei;\r\n\r\n    uint8 Minute = 1 minutes; // minutes * 60 (Disimpan dalam satuan detik)\r\n    uint256 Hour = 1 hours; // 24 * 60 (Disimpan dalam satuan detik)\r\n    uint256 Day = 1 days; // 24 * 60 * 60 (Disimpan dalam satuan detik)\r\n    uint256 Week = 1 weeks; // 7 * 24 * 60 * 60 (Disimpan dalam satuan detik)\r\n}",
+        "file": "sesi2/TipeVariabel.sol"
+      }
+    }
+  },
+  "sesi2/DataKompleks.sol": {
+    "__sources__": {
+      "sesi2/DataKompleks.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.24;\r\n\r\ncontract DataKompleks {\r\n    // Mapping\r\n    mapping(address => uint256) public balances;\r\n\r\n    // Array\r\n    int256[] private nums;\r\n\r\n    // Struct\r\n    struct User {\r\n        string name;\r\n        uint8 umur;\r\n        bool aktif;\r\n    }\r\n\r\n    User user;\r\n}",
+        "file": "sesi2/DataKompleks.sol"
+      }
+    }
+  },
+  "sesi2/Mutability.sol": {
+    "__sources__": {
+      "sesi2/Mutability.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.24;\r\n\r\ncontract Mutability {\r\n    uint256 balance = 7;\r\n    function getBalance() public view returns(uint256) {\r\n        return balance;\r\n    }\r\n\r\n    function add(uint256 a, uint256 b) public pure returns(uint256) {\r\n        return a + b;\r\n    }\r\n\r\n    function deposit() public payable {\r\n        balance = balance + msg.value;\r\n    }\r\n}",
+        "file": "sesi2/Mutability.sol"
+      }
+    }
+  },
+  "sesi2/ReturnValues.sol": {
+    "__sources__": {
+      "sesi2/ReturnValues.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.24;\r\n\r\ncontract ReturnValues {\r\n    address public owner;\r\n\r\n    constructor() {\r\n        owner = msg.sender;\r\n    } \r\n    \r\n    function getInfo() public pure returns (string memory, uint) {\r\n        return (\"Budi\", 25);\r\n    }\r\n\r\n    function get() public pure returns (string memory nama, uint umur) {\r\n        nama = \"Budi\"; umur = 25;\r\n    }\r\n}",
+        "file": "sesi2/ReturnValues.sol"
+      }
+    }
+  }
+}

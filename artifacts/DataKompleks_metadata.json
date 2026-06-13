@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"sesi2/DataKompleks.sol": "DataKompleks"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"sesi2/DataKompleks.sol": {
+			"keccak256": "0xe312d2cdadb6225f4edb9105f0422be07c9db6a1e868035be75c7196b836acf9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://80d8551ea8df31e3c92fdb78a70fbbfc8bd36eda6c038a6f3d883a13a76a92d0",
+				"dweb:/ipfs/QmTDhFs4vwHSpv2n21W9XNFWx4r8nB7m6D7ywS2WrRHp25"
+			]
+		}
+	},
+	"version": 1
+}
