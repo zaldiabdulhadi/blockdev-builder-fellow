@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"sesi4/ReentrancyAttack.sol": "Bank"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"sesi4/ReentrancyAttack.sol": {
+			"keccak256": "0x3864cc408da5ade13a26f1ed25c95dadba440640727a710009830bb6d18be7b1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2d46c593833c36adaab05b08d5c998f00b47ebbe5be52707a864a31e3681e1a5",
+				"dweb:/ipfs/QmUQTUNJJ4q8Tq9kzfYWBUhuhWj4BY6fXFE6B8wi3FBTF7"
+			]
+		}
+	},
+	"version": 1
+}

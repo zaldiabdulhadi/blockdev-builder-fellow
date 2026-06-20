@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "userBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"sesi3/MultipleInheritance.sol": "A"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"sesi3/MultipleInheritance.sol": {
+			"keccak256": "0x6048131630ce807ba80c2947770e5a50e8c3b1d2af47f9034dc372a3b7a45770",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://51459494301ecb5fb3a046eb4ea9c797cb921ae0d34b8c29e022adff2a09bbad",
+				"dweb:/ipfs/QmTDqxSUYNLUb9HJ9q6WdHUU7L7Du5WKEFFAW2k2N7v6Mg"
+			]
+		}
+	},
+	"version": 1
+}

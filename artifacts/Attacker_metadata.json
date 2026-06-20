@@ -1,0 +1,68 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_victim",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "attack",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"sesi4/ReentrancyAttack.sol": "Attacker"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"sesi4/ReentrancyAttack.sol": {
+			"keccak256": "0x35c395f1028b6072fc8123354facde44ef57a6604a685d322c6a40a60d79191a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://220944cd44e781315e99eec142cb740779625b4751f56a3bcc6345f45a9e5673",
+				"dweb:/ipfs/QmWfgDyQKDx9Shf4XFpfsGxPJWfYgmRjoo4SNF7CuXLRmv"
+			]
+		}
+	},
+	"version": 1
+}

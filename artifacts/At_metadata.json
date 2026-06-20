@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"sesi4/ReentrancyAttack.sol": "At"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"sesi4/ReentrancyAttack.sol": {
+			"keccak256": "0x0a731eceb12757a17d6a5bd98d719294a6ae655541d7ed3fa0627308901e8ae7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0266e98c18b2aa84db8a28961b653fa6b7690c70d2b65a014c93493d0ee8b927",
+				"dweb:/ipfs/QmRQkbvyzGJGvRwzo3oht7z4rLm4Q1Vb4XwBvLKw5BSPh8"
+			]
+		}
+	},
+	"version": 1
+}
